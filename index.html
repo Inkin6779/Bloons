@@ -1,9 +1,22 @@
 <html>
   <head>
     <title>Bloons</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+    </style>
     <script>
         window.onbeforeunload = function() {
             return "Are you sure you want to reload?";
+        };
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            letterbox: "on",
+            scale: "showAll",
+            forceScale: true
         };
     </script>
   </head>
